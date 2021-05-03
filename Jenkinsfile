@@ -23,8 +23,10 @@ pipeline {
         
         stage('delivery') {
             
-            unstash 'model'
-            
+            steps {
+                
+                unstash 'model'
+            }
         }
     }
 }
